@@ -1,0 +1,333 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>欢迎</title>
+		<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="js/jquery.min.js"></script>
+		 <!---- start-smoth-scrolling---->
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+		 <!---- start-smoth-scrolling---->
+		 <!-- Custom Theme files -->
+		<link href="css/style.css" rel='stylesheet' type='text/css' />
+   		 <!-- Custom Theme files -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		</script>
+		<!---//webfonts--->
+		<!----start-top-nav-script---->
+		<script>
+			$(function() {
+				var pull 		= $('#pull');
+					menu 		= $('nav ul');
+					menuHeight	= menu.height();
+				$(pull).on('click', function(e) {
+					e.preventDefault();
+					menu.slideToggle();
+				});
+				$(window).resize(function(){
+	        		var w = $(window).width();
+	        		if(w > 320 && menu.is(':hidden')) {
+	        			menu.removeAttr('style');
+	        		}
+	    		});
+			});
+		</script>
+	</head>
+	<body>
+			<div id="home" class="header">
+					<div class="top-header bounceInDown" data-wow-delay="0.4s">
+						<div class="container">
+						<div class="logo">
+							<a href="#">穆霖.</a>
+						</div>
+						 <nav class="top-nav">
+							<ul class="top-nav">
+								<li class="active"><a href="#home" class="scroll">返回</a></li>
+								<li><a href="#about" class="scroll">搜索</a></li>
+								<li><a href="#portfolio" class="scroll">练习</a></li>
+								<li><a href="#skills" class="scroll">作品</a></li>
+								<li><a href="#contact" class="scroll">空间</a></li>
+								<li class="team-active"><a href="#team" class="scroll">助手</a></li>
+							</ul>
+							<a href="#" id="pull"><img src="images/nav-icon.png" title="menu" /></a>
+						</nav>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+			</div>
+			<script src="js/responsiveslides.min.js"></script>
+			 <script>
+			    // You can also use "$(window).load(function() {"
+			    $(function () {
+			      // Slideshow 4
+			      $("#slider4").responsiveSlides({
+			        auto: true,
+			        pager: true,
+			        nav: true,
+			        speed: 500,
+			        namespace: "callbacks",
+			        before: function () {
+			          $('.events').append("<li>before event fired.</li>");
+			        },
+			        after: function () {
+			          $('.events').append("<li>after event fired.</li>");
+			        }
+			      });
+			
+			    });
+			  </script>
+			    <div  id="top" class="callbacks_container">
+			      <ul class="rslides" id="slider4">
+			        <li>
+			          <img src="images/slide1.jpg" alt="">
+			          <div class="caption bounceInDown" data-wow-delay="0.4s">
+			          	<div class="slide-text-info">
+			          		<span>感谢你的<label>浏览</label></span>
+			          		<h1>作品合集</h1>
+			          		<div class="slide-btns">
+			          			<a class="startnow" href="#">NOW</a>
+			          			<a class="livedemo" href="#">start</a>
+			          		</div>
+			          	</div>
+			          </div>
+			        </li>
+			        <li>
+			          <img src="images/slide2.jpg" alt="">
+			        <div class="caption">
+			          	<div class="slide-text-info bounceInDown" data-wow-delay="0.4s">
+			          		<span>双人 <label>游戏</label></span>
+			          		<h1>作品合集</h1>
+			          		<div class="slide-btns">
+			          			<a class="startnow" href="#">NOW</a>
+			          			<a class="livedemo" href="#">start</a>
+			          		</div>
+			          	</div>
+			          </div>
+			        </li>
+			        <li>
+			          <img src="images/slide1.jpg" alt="">
+			          <div class="caption">
+			          	<div class="slide-text-info bounceInDown" data-wow-delay="0.4s">
+			          		<span>感谢你的<label>浏览</label></span>
+			          		<h1>作品合集</h1>
+			          		<div class="slide-btns">
+			          			<a class="startnow" href="#">NOW</a>
+			          			<a class="livedemo" href="#">start</a>
+			          		</div>
+			          	</div>
+			          </div>
+			        </li>
+			      </ul>
+			    </div>
+			    <div class="clearfix"> </div>
+			<div id="about" class="top-grids text-center">
+				<div class="container">
+					<div class="col-md-4">
+						<div class="top-grid">
+							<span><label class="icon1"> </label></span>
+							<h3><a href="#">电脑下载</a></h3>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="top-grid">
+							<span><label class="icon2"> </label></span>
+							<h3><a href="#">在线设置</a></h3>
+	
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="top-grid">
+							<span><label class="icon3"> </label></span>
+							<h3><a href="#">联系我们</a></h3>
+						</div>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+			<div id="portfolio" class="works text-center">
+                <h3>作品合集</h3>
+				<div class="container">
+
+				 <script type="text/javascript" src="js/circles.js"></script>
+					         <script>
+								var colors = [
+										['#DFDFDF', '#AF48FE'], ['#DFDFDF', '#AF48FE'], ['#DFDFDF', '#AF48FE'], ['#DFDFDF', '#AF48FE']
+									];
+								for (var i = 1; i <= 5; i++) {
+									var child = document.getElementById('circles-' + i),
+										percentage = 50 + (i * 10);
+										
+									Circles.create({
+										id:         child.id,
+										percentage: percentage,
+										radius:     80,
+										width:      15,
+										number:   	percentage / 10,
+										text:       '%',
+										colors:     colors[i - 1]
+									});
+								}
+						
+				</script>
+				<!--/-->
+			</div>
+			<div id="team" class="team">
+				<div class="container">
+					<div class="head-section text-center">
+						<h2>作品</h2>
+						<p>作品头像合集以及部分商业用稿。</p>
+					</div>
+					<div class="team-grids text-center">
+						<div class="col-md-4">
+							<div class="team-grid">
+								<img class="img-responsive t-pic" src="images/t1.jpg" title="头像" />
+								<h3><a href="#">头像合集</a></h3>
+								<p>色彩运用以及雇主要求 </p>
+
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="team-grid">
+								<img class="img-responsive t-pic" src="images/t2.jpg" title="军装" />
+								<h3><a href="#">全身作品</a></h3>
+								<p>军装元素，以及乌鸦</p>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="team-grid">
+								<img class="img-responsive t-pic" src="images/t3.jpg" title="古风男生" />
+								<h3><a href="#">动态</a></h3>
+								<p>古风元素 </p>
+						
+							</div>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+			</div>
+			<div class="clearfix"> </div>
+			<div id="contact" class="contact">
+				<div class="container">
+					<div class="head-section text-center">
+							<h2>建议</h2>
+							<p>如果有什么意见和建议，请按照下方联系方式联系我们，谢谢。</p>
+					</div>
+					<!---- contact-grids ---->
+					<div class="contact-grids">
+						<div class="contact-map">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3256420.00766152!2d-94.8190527877968!3d37.15037720226864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2sUnited+States!5e0!3m2!1sen!2sin!4v1405259548831"> </iframe>
+						</div>
+						<div class="contact-inner-info">
+							<!---- contact-form ---->
+							<div class="col-md-8">
+								<div class="contact-form">
+									<form>
+										<div class="text-boxs">
+											<span>
+												<label>Name</label>
+												<input type="text"> 
+											</span>
+											<span>
+												<label>Email</label>
+												<input type="text"> 
+											</span>
+											<div class="clearfix"> </div>
+										</div>
+										<div class="text-area-box">
+											<span>意见</span>
+											<textarea> </textarea>
+										</div>
+										<input type="submit" value="发送" />
+									</form>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="contact-form">
+									<div class="contact-address">
+										<h4>地址</h4>
+										<p>你的联系方式</p>
+										<p>你的问题</p>
+										<p>我们在线时间</p>
+										<p>所在城市</p>
+									</div>
+									<div class="contact-address">
+										<h4>邮件</h4>
+										<p>E-mail: <a href="2058180533l@qq.com">2058180533@qq.at</a></p>
+										<p>微博: 穆霖</p>
+										<p>电话：**********8</p>
+										<p>联系我们</p>
+									</div>
+						
+									</div>
+								</div>
+							</div>
+							<div class="clearfix"> </div>
+							<!---- contact-form ---->
+						</div>
+					</div>
+					<!---- contact-grids ---->
+				</div>
+			</div>
+			</div>
+			<!---- contact ---->
+			<div class="clearfix"> </div>
+			<!--- footer ---->
+			<div class="footer">
+				<div class="container">
+					<div class="footer-grids">
+						<div class="col-md-3">
+							<div class="footer-grid">
+								<h3>Who we are</h3>
+								<div class="whoare-u">
+									<a class="footer-logo" href="#">Thanks.</a>
+									<p>神以不锈钢为原材料的身躯，
+                                    两颗老旧的纽扣嵌入眼眶，
+                                    植物纤维浸泡染料，编织成头发，
+                                    骨骼是钢筋，
+                                    血液是苏打水，
+                                    盛满了爱情和迷茫的灵魂，
+                                    住进了水晶制成的空虚的心脏，
+                                    最后在嘴唇撒上被海浪冲上岸边的泥沙，
+                                    穆霖降临人间。
+                                    </p>
+									<a class="whoare" href="#">查看更多<span> </span></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="footer-grid">
+								
+									<div class="clearfix"> </div>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="footer-grid">
+								<h3>标语</h3>
+								<div class="intouch">
+									<p>痛苦就是被迫离开原地。
+                                     ——康德
+                                     所谓自由，不是随心所欲，而是自我主宰。
+                                     ——康德
+                                     评判美，就要有一个有修养的心灵。
+                                     ——康德
+                                     </p>
+								</div>
+							</div>
+						</div>
+
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+			</div>
+	
